@@ -7,7 +7,10 @@ of x, y, and z data from the accelerometer
 *********************************************/
 
 var tessel = require('tessel');
-var accel = require('accel-mma84').use(tessel.port['A']);
+var accel = require('~/node_modules/accel-mma84').use(tessel.port['A']);
+// var accel = require('//../node_modules/accel-mma84.js').use(tessel.port['A']);
+// var accel = require('accel-mma84').use(tessel.port['A']);
+
 
 // Initialize the accelerometer.
 accel.on('ready', function () {
